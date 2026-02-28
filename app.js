@@ -57,7 +57,7 @@ const directory = {
     fdroid: ""
     },
     {
-    name: "Chromite",
+    name: "Cromite",
     logo: "apps/chromite.webp",
     github: "https://github.com/uazo/cromite",
     website: "https://github.com/uazo/cromite",
