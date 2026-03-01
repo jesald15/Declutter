@@ -1,129 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenTech Directory</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="medias/ot_logo.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OpenTech Directory</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="icon"
+            type="im'age/png"
+            sizes="32x32"
+            href="medias/ot_logo.png"
+        />
+    </head>
+    <body>
+        <header class="hero-section">
+            <h1>OpenTech</h1>
+            <p>Curated list of open-source technology for everyone.</p>
+            <a href="https://buymeacoffee.com/jesald" class="coffee-link">
+                <div class="coffee-icon">
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                        <path
+                            d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"
+                        ></path>
+                        <line x1="6" y1="1" x2="6" y2="4"></line>
+                        <line x1="10" y1="1" x2="10" y2="4"></line>
+                        <line x1="14" y1="1" x2="14" y2="4"></line>
+                    </svg>
+                </div>
+                <span>Help to buy a domain</span>
+            </a>
+        </header>
 
-    <header class="hero-section">
-        <h1>OpenTech</h1>
-        <p>Curated list of open-source technology for everyone.</p>
-        <a href="https://buymeacoffee.com/jesald" class="coffee-link">
-            <div class="coffee-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
-                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
-                    <line x1="6" y1="1" x2="6" y2="4"></line>
-                    <line x1="10" y1="1" x2="10" y2="4"></line>
-                    <line x1="14" y1="1" x2="14" y2="4"></line>
-                </svg>
+        <main class="content">
+            <section>
+                <h2 class="category-title">Chat</h2>
+                <div class="grid-container" id="chat-apps"></div>
+            </section>
+
+            <section>
+                <h2 class="category-title">Browser</h2>
+                <div class="grid-container" id="browser-apps"></div>
+            </section>
+
+            <section>
+                <h2 class="category-title">Email Services</h2>
+                <div class="grid-container" id="email-apps"></div>
+            </section>
+
+            <section>
+                <h2 class="category-title">VPN</h2>
+                <div class="grid-container" id="vpn"></div>
+            </section>
+
+            <section>
+                <h2 class="category-title">Cloud & Sync</h2>
+                <div class="grid-container" id="cloud"></div>
+            </section>
+
+            <section>
+                <h2 class="category-title">Calendar</h2>
+                <div class="grid-container" id="calendar"></div>
+            </section>
+
+            <section>
+                <h2 class="category-title">Password Managers</h2>
+                <div class="grid-container" id="password"></div>
+            </section>
+
+            <section>
+                <h2 class="category-title">Search Engines</h2>
+                <div class="grid-container" id="search"></div>
+            </section>
+
+            <section>
+                <h2 class="category-title">Notes</h2>
+                <div class="grid-container" id="notes"></div>
+            </section>
+
+            <section>
+                <h2 class="category-title">Office</h2>
+                <div class="grid-container" id="office"></div>
+            </section>
+
+            <section>
+                <h2 class="category-title">Maps & Navigation</h2>
+                <div class="grid-container" id="maps"></div>
+            </section>
+
+            <section>
+                <h2 class="category-title">Social (Fediverse)</h2>
+                <div class="grid-container" id="social"></div>
+            </section>
+
+            <section>
+                <h2 class="category-title">Custom ROMS</h2>
+                <div class="grid-container" id="custom-roms"></div>
+            </section>
+        </main>
+
+        <script src="app.js"></script>
+
+        <footer class="footer-section">
+            <div class="footer-wrap">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">OpenTech</h2>
+                </div>
+
+                <div class="footer-socials">
+                    <span class="social-label">Follow Us</span>
+                    <div class="link-group">
+                        <a
+                            href="https://mastodon.social/@echo_xc"
+                            class="social-link"
+                        >
+                            <img
+                                src="medias/mastodon_logo_icon_145082.svg"
+                                alt="Mastodon"
+                                class="footer-icon"
+                            />
+                        </a>
+                    </div>
+                </div>
             </div>
-            <span>Help to buy a domain</span>
-        </a>
-    </header>
-
-<main class="content">
-
-  <section>
-    <h2 class="category-title">Chat</h2>
-    <div class="grid-container" id="chat-apps"></div>
-  </section>
-
-  <section>
-    <h2 class="category-title">Browser</h2>
-    <div class="grid-container" id="browser-apps"></div>
-  </section>
-
-  <section>
-    <h2 class="category-title">Email Services</h2>
-    <div class="grid-container" id="email-apps"></div>
-  </section>
-
-  <section>
-    <h2 class="category-title">VPN</h2>
-    <div class="grid-container" id="vpn"></div>
-  </section>
-
-  <section>
-  <h2 class="category-title">Cloud & Sync</h2>
-  <div class="grid-container" id="cloud"></div>
-</section>
-
-<section>
-  <h2 class="category-title">Calendar</h2>
-  <div class="grid-container" id="calendar"></div>
-</section>
-
-<section>
-  <h2 class="category-title">Password Managers</h2>
-  <div class="grid-container" id="password"></div>
-</section>
-
-<section>
-  <h2 class="category-title">Search Engines</h2>
-  <div class="grid-container" id="search"></div>
-</section>
-
-<section>
-  <h2 class="category-title">Notes</h2>
-  <div class="grid-container" id="notes"></div>
-</section>
-
-<section>
-  <h2 class="category-title">Office</h2>
-  <div class="grid-container" id="office"></div>
-</section>
-
-<section>
-  <h2 class="category-title">Maps & Navigation</h2>
-  <div class="grid-container" id="maps"></div>
-</section>
-
-<section>
-  <h2 class="category-title">Social (Fediverse)</h2>
-  <div class="grid-container" id="social"></div>
-</section>
-
-</main>
-
-<script src="app.js"></script>
-
-<footer class="footer-section">
-     <div class="footer-wrap">
-        <div class="footer-brand">
-            <h2 class="footer-logo">OpenTech</h2>
-        </div>
-
-        <div class="footer-socials">
-            <span class="social-label">Follow Us</span>
-            <div class="link-group">
-                <a href="https://mastodon.social/@echo_xc" class="social-link">
-                    <img src="medias/mastodon_logo_icon_145082.svg" alt="Mastodon" class="footer-icon">
-                </a>
+            <a href="https://buymeacoffee.com/jesald" class="coffee-link">
+                <div class="coffee-icon">
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                        <path
+                            d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"
+                        ></path>
+                        <line x1="6" y1="1" x2="6" y2="4"></line>
+                        <line x1="10" y1="1" x2="10" y2="4"></line>
+                        <line x1="14" y1="1" x2="14" y2="4"></line>
+                    </svg>
+                </div>
+                <span>Help me buy a domain</span>
+            </a>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OpenTech. Stay Open.</p>
             </div>
-        </div>
-    </div>
-    <a href="https://buymeacoffee.com/jesald" class="coffee-link">
-            <div class="coffee-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
-                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
-                    <line x1="6" y1="1" x2="6" y2="4"></line>
-                    <line x1="10" y1="1" x2="10" y2="4"></line>
-                    <line x1="14" y1="1" x2="14" y2="4"></line>
-                </svg>
-            </div>
-            <span>Help me buy a domain</span>
-        </a>
-    <div class="footer-bottom">
-        <p>&copy; 2026 OpenTech. Stay Open.</p>
-    </div>
-
-</footer>
-
-</body>
+        </footer>
+    </body>
 </html>
