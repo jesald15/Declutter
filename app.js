@@ -34,6 +34,13 @@ const directory = {
       fdroid: "https://threema.com/en/faq/libre-installation",
       website: "https://threema.com/en/products/private",
     },
+    {
+      name: "Delta Chat",
+      logo: "apps/delta-chat.png",
+      github: "https://github.com/deltachat",
+      fdroid: "https://f-droid.org/packages/com.b44t.messenger/",
+      website: "https://delta.chat/",
+    },
   ],
 
   browser: [
