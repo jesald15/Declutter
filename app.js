@@ -149,6 +149,13 @@ const directory = {
       website: "https://nextcloud.com/",
     },
     {
+      name: "Proton Drive",
+      logo: "apps/proton-drive.png",
+      github: "https://github.com/ProtonDriveApps",
+      fdroid: "",
+      website: "https://proton.me/drive",
+    },
+    {
       name: "ownCloud",
       logo: "apps/owncloud.svg",
       github: "https://github.com/owncloud",
