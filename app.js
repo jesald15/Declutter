@@ -1,49 +1,43 @@
 const directory = {
-  chat: [
+  appstore: [
     {
-      name: "Signal",
-      logo: "apps/Signal-Logo.svg.png",
-      github: "https://github.com/signalapp",
-      website: "https://signal.org/",
+      name: "F-Droid",
+      logo: "apps/fdroid.png",
+      github: "https://github.com/f-droid",
+      fdroid: "",
+      website: "https://f-droid.org/",
     },
     {
-      name: "Session",
-      logo: "apps/session.png",
-      github: "https://github.com/session-foundation",
-      fdroid: "https://fdroid.getsession.org/",
-      website: "https://getsession.org/",
+      name: "Aurora Store",
+      logo: "apps/aurora-store.png",
+      github: "https://gitlab.com/AuroraOSS/AuroraStore",
+      fdroid: "https://f-droid.org/packages/com.aurora.store/",
+      website: "https://auroraoss.com/",
     },
     {
-      name: "Element",
-      logo: "apps/element.png",
-      github: "https://github.com/element-hq",
-      fdroid: "https://f-droid.org/en/packages/im.vector.app/",
-      website: "https://element.io/en",
-    },
-    {
-      name: "SimpleX",
-      logo: "apps/simplex.png",
-      github: "https://github.com/simplex-chat/simplex-chat",
-      fdroid: "https://f-droid.org/en/packages/chat.simplex.app/",
-      website: "https://simplex.chat/",
-    },
-    {
-      name: "Threema",
-      logo: "apps/threema.png",
-      github: "https://github.com/threema-ch/threema-android",
-      fdroid: "https://threema.com/en/faq/libre-installation",
-      website: "https://threema.com/en/products/private",
-    },
-    {
-      name: "Delta Chat",
-      logo: "apps/delta-chat.png",
-      github: "https://github.com/deltachat",
-      fdroid: "https://f-droid.org/packages/com.b44t.messenger/",
-      website: "https://delta.chat/",
+      name: "Obtainium",
+      logo: "apps/obtainium.png",
+      github: "https://github.com/ImranR98/Obtainium",
+      fdroid: "https://f-droid.org/en/packages/dev.imranr.obtainium.fdroid/",
+      website: "https://obtainium.imranr.dev/",
     },
   ],
 
   browser: [
+    {
+      name: "Cromite",
+      logo: "apps/chromite.webp",
+      github: "https://github.com/uazo/cromite",
+      website: "https://github.com/uazo/cromite",
+      fdroid: "https://www.cromite.org/fdroid/repo",
+    },
+    {
+      name: "Brave Browser",
+      logo: "apps/brave.webp",
+      github: "https://github.com/brave/brave-browser",
+      fdroid: "",
+      website: "https://brave.com/",
+    },
     {
       name: "Firefox",
       logo: "apps/firefox.jpeg",
@@ -51,10 +45,11 @@ const directory = {
       website: "https://www.mozilla.org/firefox/",
     },
     {
-      name: "Tor Browser",
-      logo: "apps/tor.jpeg",
-      github: "https://gitlab.torproject.org/tpo/applications/tor-browser",
-      website: "https://www.torproject.org/",
+      name: "LibreWolf",
+      logo: "apps/librewolf.png",
+      github: "https://github.com/librewolf-community",
+      fdroid: "",
+      website: "https://librewolf.net/",
     },
     {
       name: "Mullvad Browser",
@@ -64,11 +59,10 @@ const directory = {
       fdroid: "",
     },
     {
-      name: "Cromite",
-      logo: "apps/chromite.webp",
-      github: "https://github.com/uazo/cromite",
-      website: "https://github.com/uazo/cromite",
-      fdroid: "https://www.cromite.org/fdroid/repo",
+      name: "Tor Browser",
+      logo: "apps/tor.jpeg",
+      github: "https://gitlab.torproject.org/tpo/applications/tor-browser",
+      website: "https://www.torproject.org/",
     },
     {
       name: "Zen Browser",
@@ -77,128 +71,16 @@ const directory = {
       fdroid: "",
       website: "https://zen-browser.app/",
     },
-    {
-      name: "LibreWolf",
-      logo: "apps/librewolf.png",
-      github: "https://github.com/librewolf-community",
-      fdroid: "",
-      website: "https://librewolf.net/",
-    },
   ],
 
-  email: [
-    {
-      name: "Proton Mail",
-      logo: "apps/promail.png",
-      github: "https://github.com/ProtonMail",
-      website: "https://proton.me/mail",
-    },
-    {
-      name: "Tuta",
-      logo: "apps/tuta mail.png",
-      github: "https://github.com/tutao/tutanota",
-      fdroid: "https://f-droid.org/en/packages/de.tutao.tutanota/",
-      website: "https://tuta.com/",
-    },
-    {
-      name: "Posteo",
-      logo: "apps/posteo.jpg",
-      github: "https://github.com/posteo",
-      fdroid: "",
-      website: "https://posteo.de/",
-    },
-    {
-      name: "mailbox.org",
-      logo: "apps/mailbox-org.jpg",
-      github: "",
-      fdroid: "",
-      website: "https://mailbox.org/",
-    },
-  ],
-
-  vpn: [
-    {
-      name: "Proton VPN",
-      logo: "apps/protonvpn.png",
-      github: "https://github.com/ProtonVPN",
-      fdroid: "https://f-droid.org/en/packages/ch.protonvpn.android/",
-      website: "https://protonvpn.com/",
-    },
-    {
-      name: "Mullvad VPN",
-      logo: "apps/mullvad.png",
-      github: "https://github.com/mullvad",
-      fdroid: "https://f-droid.org/en/packages/net.mullvad.mullvadvpn/",
-      website: "https://mullvad.net/",
-    },
-    {
-      name: "IVPN",
-      logo: "apps/ivpn.png",
-      github: "https://github.com/ivpn",
-      fdroid: "https://f-droid.org/en/packages/net.ivpn.client/",
-      website: "https://www.ivpn.net/",
-    },
-  ],
-
-  cloud: [
-    {
-      name: "Nextcloud",
-      logo: "apps/nextcloud.png",
-      github: "https://github.com/nextcloud",
-      fdroid: "https://f-droid.org/packages/com.nextcloud.client/",
-      website: "https://nextcloud.com/",
-    },
-    {
-      name: "Proton Drive",
-      logo: "apps/proton-drive.png",
-      github: "https://github.com/ProtonDriveApps",
-      fdroid: "",
-      website: "https://proton.me/drive",
-    },
-    {
-      name: "ownCloud",
-      logo: "apps/owncloud.svg",
-      github: "https://github.com/owncloud",
-      fdroid: "https://f-droid.org/packages/com.owncloud.android/",
-      website: "https://owncloud.com/",
-    },
-    {
-      name: "OpenCloud",
-      logo: "apps/opencloud.png",
-      github: "https://github.com/opencloud-eu",
-      fdroid: "",
-      website: "https://opencloud.eu/",
-    },
-    {
-      name: "CryptPad",
-      logo: "apps/cryptpad.svg",
-      github: "https://github.com/cryptpad/cryptpad",
-      fdroid: "",
-      website: "https://cryptpad.fr/",
-    },
-    {
-      name: "Seafile",
-      logo: "apps/seafile.png",
-      github: "https://github.com/haiwen/seafile",
-      fdroid: "",
-      website: "https://www.seafile.com/",
-    },
-    {
-      name: "Syncthing",
-      logo: "apps/syncthing.png",
-      github: "https://github.com/syncthing/syncthing",
-      fdroid: "https://f-droid.org/packages/com.nutomic.syncthingandroid/",
-      website: "https://syncthing.net/",
-    },
-    {
-      name: "rclone",
-      logo: "apps/rclone.webp",
-      github: "https://github.com/rclone/rclone",
-      fdroid: "",
-      website: "https://rclone.org/",
-    },
-  ],
   calendar: [
+    {
+      name: "Etar",
+      logo: "apps/etar.webp",
+      github: "https://github.com/Etar-Group/Etar-Calendar",
+      fdroid: "https://f-droid.org/packages/ws.xsoh.etar/",
+      website: "https://github.com/Etar-Group/Etar-Calendar",
+    },
     {
       name: "Fossify Calendar",
       logo: "apps/fossify-calendar.png",
@@ -214,13 +96,6 @@ const directory = {
       website: "https://nextcloud.com/",
     },
     {
-      name: "Tuta Calendar",
-      logo: "apps/tuta-calendar.webp",
-      github: "https://github.com/tutao/tutanota",
-      fdroid: "https://f-droid.org/en/packages/de.tutao.tutanota/",
-      website: "https://tuta.com/calendar/",
-    },
-    {
       name: "Proton Calendar",
       logo: "apps/proton-calendar.png",
       github: "https://github.com/ProtonMail",
@@ -228,11 +103,283 @@ const directory = {
       website: "https://proton.me/calendar",
     },
     {
-      name: "Etar",
-      logo: "apps/etar.webp",
-      github: "https://github.com/Etar-Group/Etar-Calendar",
-      fdroid: "https://f-droid.org/packages/ws.xsoh.etar/",
-      website: "https://github.com/Etar-Group/Etar-Calendar",
+      name: "Tuta Calendar",
+      logo: "apps/tuta-calendar.webp",
+      github: "https://github.com/tutao/tutanota",
+      fdroid: "https://f-droid.org/en/packages/de.tutao.tutanota/",
+      website: "https://tuta.com/calendar/",
+    },
+  ],
+
+  chat: [
+    {
+      name: "Delta Chat",
+      logo: "apps/delta-chat.png",
+      github: "https://github.com/deltachat",
+      fdroid: "https://f-droid.org/packages/com.b44t.messenger/",
+      website: "https://delta.chat/",
+    },
+    {
+      name: "Element",
+      logo: "apps/element.png",
+      github: "https://github.com/element-hq",
+      fdroid: "https://f-droid.org/en/packages/im.vector.app/",
+      website: "https://element.io/en",
+    },
+    {
+      name: "Session",
+      logo: "apps/session.png",
+      github: "https://github.com/session-foundation",
+      fdroid: "https://fdroid.getsession.org/",
+      website: "https://getsession.org/",
+    },
+    {
+      name: "Signal",
+      logo: "apps/Signal-Logo.svg.png",
+      github: "https://github.com/signalapp",
+      website: "https://signal.org/",
+    },
+    {
+      name: "SimpleX",
+      logo: "apps/simplex.png",
+      github: "https://github.com/simplex-chat/simplex-chat",
+      fdroid: "https://f-droid.org/en/packages/chat.simplex.app/",
+      website: "https://simplex.chat/",
+    },
+    {
+      name: "Threema",
+      logo: "apps/threema.png",
+      github: "https://github.com/threema-ch/threema-android",
+      fdroid: "https://threema.com/en/faq/libre-installation",
+      website: "https://threema.com/en/products/private",
+    },
+  ],
+
+  cloud: [
+    {
+      name: "CryptPad",
+      logo: "apps/cryptpad.svg",
+      github: "https://github.com/cryptpad/cryptpad",
+      fdroid: "",
+      website: "https://cryptpad.fr/",
+    },
+    {
+      name: "Nextcloud",
+      logo: "apps/nextcloud.png",
+      github: "https://github.com/nextcloud",
+      fdroid: "https://f-droid.org/packages/com.nextcloud.client/",
+      website: "https://nextcloud.com/",
+    },
+    {
+      name: "OpenCloud",
+      logo: "apps/opencloud.png",
+      github: "https://github.com/opencloud-eu",
+      fdroid: "",
+      website: "https://opencloud.eu/",
+    },
+    {
+      name: "ownCloud",
+      logo: "apps/owncloud.svg",
+      github: "https://github.com/owncloud",
+      fdroid: "https://f-droid.org/packages/com.owncloud.android/",
+      website: "https://owncloud.com/",
+    },
+    {
+      name: "Proton Drive",
+      logo: "apps/proton-drive.png",
+      github: "https://github.com/ProtonDriveApps",
+      fdroid: "",
+      website: "https://proton.me/drive",
+    },
+    {
+      name: "rclone",
+      logo: "apps/rclone.webp",
+      github: "https://github.com/rclone/rclone",
+      fdroid: "",
+      website: "https://rclone.org/",
+    },
+    {
+      name: "Seafile",
+      logo: "apps/seafile.png",
+      github: "https://github.com/haiwen/seafile",
+      fdroid: "",
+      website: "https://www.seafile.com/",
+    },
+    {
+      name: "Syncthing",
+      logo: "apps/syncthing.png",
+      github: "https://github.com/syncthing/syncthing",
+      fdroid: "https://f-droid.org/packages/com.nutomic.syncthingandroid/",
+      website: "https://syncthing.net/",
+    },
+  ],
+
+  custom_roms: [
+    {
+      name: "/e/OS",
+      logo: "apps/eos.png",
+      github: "https://github.com/e-foundation",
+      fdroid: "",
+      website: "https://e.foundation/",
+    },
+    {
+      name: "CalyxOS",
+      logo: "apps/calyxos.png",
+      github: "https://github.com/CalyxOS",
+      fdroid: "",
+      website: "https://calyxos.org/",
+    },
+    {
+      name: "GrapheneOS",
+      logo: "apps/grapheneos.png",
+      github: "https://github.com/GrapheneOS",
+      fdroid: "",
+      website: "https://grapheneos.org/",
+    },
+    {
+      name: "LineageOS",
+      logo: "apps/lineageos.png",
+      github: "https://github.com/LineageOS",
+      fdroid: "",
+      website: "https://lineageos.org/",
+    },
+    {
+      name: "postmarketOS",
+      logo: "apps/postmarketos.svg",
+      github: "",
+      fdroid: "",
+      website: "https://postmarketos.org/",
+    },
+    {
+      name: "Sailfish OS",
+      logo: "apps/sailfishos.png",
+      github: "https://github.com/sailfishos",
+      fdroid: "",
+      website: "https://sailfishos.org/",
+    },
+  ],
+
+  email: [
+    {
+      name: "mailbox.org",
+      logo: "apps/mailbox-org.jpg",
+      github: "",
+      fdroid: "",
+      website: "https://mailbox.org/",
+    },
+    {
+      name: "Posteo",
+      logo: "apps/posteo.jpg",
+      github: "https://github.com/posteo",
+      fdroid: "",
+      website: "https://posteo.de/",
+    },
+    {
+      name: "Proton Mail",
+      logo: "apps/promail.png",
+      github: "https://github.com/ProtonMail",
+      website: "https://proton.me/mail",
+    },
+    {
+      name: "Tuta",
+      logo: "apps/tuta mail.png",
+      github: "https://github.com/tutao/tutanota",
+      fdroid: "https://f-droid.org/en/packages/de.tutao.tutanota/",
+      website: "https://tuta.com/",
+    },
+  ],
+
+  maps: [
+    {
+      name: "CoMaps",
+      logo: "apps/comaps.png",
+      github: "https://codeberg.org/comaps",
+      fdroid: "https://f-droid.org/packages/app.comaps.fdroid/",
+      website: "https://comaps.app/",
+    },
+    {
+      name: "OpenStreetMap",
+      logo: "apps/openstreet-map.png",
+      github: "https://github.com/openstreetmap",
+      fdroid: "",
+      website: "https://www.openstreetmap.org/",
+    },
+    {
+      name: "Organic Maps",
+      logo: "apps/organic-maps.png",
+      github: "https://github.com/organicmaps/organicmaps",
+      fdroid: "https://f-droid.org/packages/app.organicmaps/",
+      website: "https://organicmaps.app/",
+    },
+    {
+      name: "OsmAnd",
+      logo: "apps/osmand.png",
+      github: "https://github.com/osmandapp/OsmAnd",
+      fdroid: "https://f-droid.org/packages/net.osmand.plus/",
+      website: "https://osmand.net/",
+    },
+  ],
+
+  notes: [
+    {
+      name: "Joplin",
+      logo: "apps/joplin.png",
+      github: "https://github.com/laurent22/joplin",
+      fdroid: "https://f-droid.org/packages/net.cozic.joplin/",
+      website: "https://joplinapp.org/",
+    },
+    {
+      name: "Logseq",
+      logo: "apps/logseq.png",
+      github: "https://github.com/logseq/logseq",
+      fdroid: "https://f-droid.org/en/packages/com.logseq.app/",
+      website: "https://logseq.com/",
+    },
+    {
+      name: "Markor",
+      logo: "apps/markor.png",
+      github: "https://github.com/gsantner/markor",
+      fdroid: "https://f-droid.org/packages/net.gsantner.markor/",
+      website: "https://gsantner.net/project/markor/",
+    },
+    {
+      name: "Notesnook",
+      logo: "apps/notesnook.png",
+      github: "https://github.com/streetwriters/notesnook",
+      fdroid: "https://f-droid.org/en/packages/com.streetwriters.notesnook/",
+      website: "https://notesnook.com/",
+    },
+    {
+      name: "Standard Notes",
+      logo: "apps/standard-notes.svg",
+      github: "https://github.com/standardnotes",
+      fdroid: "",
+      website: "https://standardnotes.com/",
+    },
+  ],
+
+  office: [
+    {
+      name: "Collabora Online",
+      logo: "apps/collabora.png",
+      github: "https://github.com/CollaboraOnline/online",
+      fdroid: "",
+      website: "https://www.collaboraoffice.com/",
+    },
+    {
+      name: "LibreOffice",
+      logo: "apps/libreoffice.png",
+      github: "https://github.com/LibreOffice/core",
+      fdroid:
+        "https://f-droid.org/en/packages/org.documentfoundation.libreoffice/",
+      website: "https://www.libreoffice.org/",
+    },
+    {
+      name: "ONLYOFFICE",
+      logo: "apps/onlyoffice.png",
+      github: "https://github.com/ONLYOFFICE/DocumentServer",
+      fdroid: "",
+      website: "https://www.onlyoffice.com/",
     },
   ],
 
@@ -262,11 +409,11 @@ const directory = {
 
   search: [
     {
-      name: "SearxNG",
-      logo: "apps/searxng.svg",
-      github: "https://github.com/searxng/searxng",
+      name: "Brave Search",
+      logo: "apps/bravese.png",
+      github: "",
       fdroid: "",
-      website: "https://searxng.org/",
+      website: "https://search.brave.com/",
     },
     {
       name: "DuckDuckGo",
@@ -274,13 +421,6 @@ const directory = {
       github: "https://github.com/duckduckgo",
       fdroid: "",
       website: "https://duckduckgo.com/",
-    },
-    {
-      name: "Startpage",
-      logo: "apps/startpage.png",
-      github: "",
-      fdroid: "",
-      website: "https://www.startpage.com/",
     },
     {
       name: "Kagi Search",
@@ -296,103 +436,37 @@ const directory = {
       fdroid: "",
       website: "https://www.mojeek.com/",
     },
-  ],
-
-  notes: [
     {
-      name: "Joplin",
-      logo: "apps/joplin.png",
-      github: "https://github.com/laurent22/joplin",
-      fdroid: "https://f-droid.org/packages/net.cozic.joplin/",
-      website: "https://joplinapp.org/",
-    },
-    {
-      name: "Standard Notes",
-      logo: "apps/standard-notes.svg",
-      github: "https://github.com/standardnotes",
+      name: "SearxNG",
+      logo: "apps/searxng.svg",
+      github: "https://github.com/searxng/searxng",
       fdroid: "",
-      website: "https://standardnotes.com/",
+      website: "https://searxng.org/",
     },
     {
-      name: "Notesnook",
-      logo: "apps/notesnook.png",
-      github: "https://github.com/streetwriters/notesnook",
-      fdroid: "https://f-droid.org/en/packages/com.streetwriters.notesnook/",
-      website: "https://notesnook.com/",
-    },
-    {
-      name: "Logseq",
-      logo: "apps/logseq.png",
-      github: "https://github.com/logseq/logseq",
-      fdroid: "https://f-droid.org/en/packages/com.logseq.app/",
-      website: "https://logseq.com/",
-    },
-    {
-      name: "Markor",
-      logo: "apps/markor.png",
-      github: "https://github.com/gsantner/markor",
-      fdroid: "https://f-droid.org/packages/net.gsantner.markor/",
-      website: "https://gsantner.net/project/markor/",
-    },
-  ],
-
-  office: [
-    {
-      name: "LibreOffice",
-      logo: "apps/libreoffice.png",
-      github: "https://github.com/LibreOffice/core",
-      fdroid:
-        "https://f-droid.org/en/packages/org.documentfoundation.libreoffice/",
-      website: "https://www.libreoffice.org/",
-    },
-    {
-      name: "ONLYOFFICE",
-      logo: "apps/onlyoffice.png",
-      github: "https://github.com/ONLYOFFICE/DocumentServer",
+      name: "Startpage",
+      logo: "apps/startpage.png",
+      github: "",
       fdroid: "",
-      website: "https://www.onlyoffice.com/",
-    },
-    {
-      name: "Collabora Online",
-      logo: "apps/collabora.png",
-      github: "https://github.com/CollaboraOnline/online",
-      fdroid: "",
-      website: "https://www.collaboraoffice.com/",
-    },
-  ],
-
-  maps: [
-    {
-      name: "Organic Maps",
-      logo: "apps/organic-maps.png",
-      github: "https://github.com/organicmaps/organicmaps",
-      fdroid: "https://f-droid.org/packages/app.organicmaps/",
-      website: "https://organicmaps.app/",
-    },
-    {
-      name: "OsmAnd",
-      logo: "apps/osmand.png",
-      github: "https://github.com/osmandapp/OsmAnd",
-      fdroid: "https://f-droid.org/packages/net.osmand.plus/",
-      website: "https://osmand.net/",
-    },
-    {
-      name: "OpenStreetMap",
-      logo: "apps/openstreet-map.png",
-      github: "https://github.com/openstreetmap",
-      fdroid: "",
-      website: "https://www.openstreetmap.org/",
-    },
-    {
-      name: "CoMaps",
-      logo: "apps/comaps.png",
-      github: "https://codeberg.org/comaps",
-      fdroid: "https://f-droid.org/packages/app.comaps.fdroid/",
-      website: "https://comaps.app/",
+      website: "https://www.startpage.com/",
     },
   ],
 
   social: [
+    {
+      name: "Lemmy",
+      logo: "apps/lemmy.svg",
+      github: "https://github.com/LemmyNet/lemmy",
+      fdroid: "",
+      website: "https://join-lemmy.org/",
+    },
+    {
+      name: "Loops",
+      logo: "apps/loops.png",
+      github: "https://github.com/loops-video",
+      fdroid: "",
+      website: "https://loops.video/",
+    },
     {
       name: "Mastodon",
       logo: "apps/mastodon.png",
@@ -407,64 +481,53 @@ const directory = {
       fdroid: "",
       website: "https://pixelfed.org/",
     },
+  ],
+
+  vpn: [
     {
-      name: "Loops",
-      logo: "apps/loops.png",
-      github: "https://github.com/loops-video",
-      fdroid: "",
-      website: "https://loops.video/",
+      name: "IVPN",
+      logo: "apps/ivpn.png",
+      github: "https://github.com/ivpn",
+      fdroid: "https://f-droid.org/en/packages/net.ivpn.client/",
+      website: "https://www.ivpn.net/",
     },
     {
-      name: "Lemmy",
-      logo: "apps/lemmy.svg",
-      github: "https://github.com/LemmyNet/lemmy",
-      fdroid: "",
-      website: "https://join-lemmy.org/",
+      name: "Mullvad VPN",
+      logo: "apps/mullvad.png",
+      github: "https://github.com/mullvad",
+      fdroid: "https://f-droid.org/en/packages/net.mullvad.mullvadvpn/",
+      website: "https://mullvad.net/",
+    },
+    {
+      name: "Proton VPN",
+      logo: "apps/protonvpn.png",
+      github: "https://github.com/ProtonVPN",
+      fdroid: "https://f-droid.org/en/packages/ch.protonvpn.android/",
+      website: "https://protonvpn.com/",
     },
   ],
 
-  custom_roms: [
+  video: [
     {
-      name: "GrapheneOS",
-      logo: "apps/grapheneos.png",
-      github: "https://github.com/GrapheneOS",
-      fdroid: "",
-      website: "https://grapheneos.org/",
+      name: "NewPipe",
+      logo: "apps/newpipe.png",
+      github: "https://github.com/TeamNewPipe/NewPipe",
+      fdroid: "https://f-droid.org/packages/org.schabi.newpipe/",
+      website: "https://newpipe.net/",
     },
     {
-      name: "/e/OS",
-      logo: "apps/eos.png",
-      github: "https://github.com/e-foundation",
-      fdroid: "",
-      website: "https://e.foundation/",
+      name: "Tubular",
+      logo: "apps/tubular.png",
+      github: "https://github.com/polymorphicshade/Tubular",
+      fdroid: "https://f-droid.org/en/packages/org.polymorphicshade.tubular/",
+      website: "",
     },
     {
-      name: "LineageOS",
-      logo: "apps/lineageos.png",
-      github: "https://github.com/LineageOS",
-      fdroid: "",
-      website: "https://lineageos.org/",
-    },
-    {
-      name: "CalyxOS",
-      logo: "apps/calyxos.png",
-      github: "https://github.com/CalyxOS",
-      fdroid: "",
-      website: "https://calyxos.org/",
-    },
-    {
-      name: "postmarketOS",
-      logo: "apps/postmarketos.svg",
-      github: "",
-      fdroid: "",
-      website: "https://postmarketos.org/",
-    },
-    {
-      name: "Sailfish OS",
-      logo: "apps/sailfishos.png",
-      github: "https://github.com/sailfishos",
-      fdroid: "",
-      website: "https://sailfishos.org/",
+      name: "PeerTube",
+      logo: "apps/peertube.png",
+      github: "https://github.com/Chocobozzz/PeerTube",
+      fdroid: "https://f-droid.org/en/packages/org.framasoft.peertube/",
+      website: "https://joinpeertube.org/",
     },
   ],
 };
@@ -490,16 +553,18 @@ function renderCategory(categoryName, containerId) {
   });
 }
 
-renderCategory("chat", "chat-apps");
 renderCategory("browser", "browser-apps");
-renderCategory("email", "email-apps");
-renderCategory("vpn", "vpn");
-renderCategory("cloud", "cloud");
 renderCategory("calendar", "calendar");
-renderCategory("password", "password");
-renderCategory("search", "search");
+renderCategory("chat", "chat-apps");
+renderCategory("cloud", "cloud");
+renderCategory("custom_roms", "custom_roms");
+renderCategory("email", "email-apps");
+renderCategory("maps", "maps");
 renderCategory("notes", "notes");
 renderCategory("office", "office");
-renderCategory("maps", "maps");
+renderCategory("password", "password");
+renderCategory("search", "search");
 renderCategory("social", "social");
-renderCategory("custom_roms", "custom_roms");
+renderCategory("vpn", "vpn");
+renderCategory("video", "video");
+renderCategory("appstore", "appstore");

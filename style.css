@@ -1,24 +1,24 @@
 :root {
-    --bg-main: #131314;      /* Gemini Dark Background */
-    --bg-card: #1e1f20;      /* Slightly lighter card background */
-    --accent: #a8c7fa;       /* Gemini Blue accent */
+    --bg-main: #131314; /* Gemini Dark Background */
+    --bg-card: #1e1f20; /* Slightly lighter card background */
+    --accent: #a8c7fa; /* Gemini Blue accent */
     --text-primary: #e3e3e3;
     --text-secondary: #9aa0a6;
 }
 body {
     color: var(--text-primary);
     margin: 0;
-    font-family: 'Inter', sans-serif; /* A clean, modern font */
+    font-family: "Inter", sans-serif; /* A clean, modern font */
     background-color: var(--bg-main);
     overflow-x: hidden;
 }
 
 /* HERO SECTION */
 .hero-section {
-   background-color: var(--bg-main);
-    background-image: 
-        linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px),
-        linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px); /* Darker grid */
+    background-color: var(--bg-main);
+    background-image:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px); /* Darker grid */
     background-size: 30px 30px; /* Blueprint grid look */
     min-height: 40vh; /* Make it take up most of the screen */
     display: flex;
@@ -28,6 +28,7 @@ body {
     position: relative;
     overflow: hidden;
     align-items: flex-start;
+    margin-top: 95px;
 }
 
 .hero-section h1 {
@@ -64,17 +65,17 @@ body {
 }
 /* HERO SECTION */
 
-/* SITE CONTENT */ 
-.content{
+/* SITE CONTENT */
+.content {
     padding: 10px 10%;
     min-height: auto; /* Removes the 100vh issue */
     overflow: hidden;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     background-color: black;
     background-color: var(--bg-main);
-     background-image: 
-        linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px),
-        linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px); /* Darker grid */
+    background-image:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px); /* Darker grid */
     background-size: 30px 30px; /* Blueprint grid look */
     min-height: 40vh; /* Make it take up most of the screen */
     margin: 0;
@@ -96,7 +97,7 @@ body {
     user-select: none;
 }
 
-.category-title:hover{
+.category-title:hover {
     color: transparent;
     -webkit-text-stroke: 1.5px #ffffff;
     letter-spacing: 2px;
@@ -104,7 +105,7 @@ body {
 }
 
 .category-title::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -122,7 +123,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 25px; 
+    gap: 25px;
 }
 
 .tool-card {
@@ -135,7 +136,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    align-items: center;    /* This centers the logo, title, and buttons horizontally */
+    align-items: center; /* This centers the logo, title, and buttons horizontally */
     justify-content: center; /* This centers them vertically if the card has extra height */
     text-align: center;
 }
@@ -166,14 +167,14 @@ body {
     color: white;
     margin-bottom: 12px;
 }
-/* --- SITE CONTENT --- */ 
+/* --- SITE CONTENT --- */
 
 /* --- FOOTER --- */
-.footer-section{
+.footer-section {
     background-color: var(--bg-main);
-    background-image: 
-        linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px),
-        linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px); /* Darker grid */
+    background-image:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px); /* Darker grid */
     background-size: 30px 30px; /* Blueprint grid look */
     min-height: 40vh; /* Make it take up most of the screen */
     display: flex;
@@ -185,7 +186,7 @@ body {
     align-items: flex-start;
 }
 
-.footer-section h2{
+.footer-section h2 {
     font-size: 3rem; /* Big bold font */
     margin: 0;
     font-weight: 900;
@@ -198,8 +199,7 @@ body {
     margin-bottom: 20px;
 }
 
-
-.footer-seciton p{
+.footer-seciton p {
     font-family: monospace;
     font-size: 0.8rem;
     text-transform: lowercase;
@@ -210,9 +210,8 @@ body {
     margin-top: 50px; /* Space between title and description */
     margin-left: 0; /* REMOVE margin-left: auto to keep it under the title */
     transform: rotate(-1deg); /* Slight tilt for that creative edge */
-    font-weight: bold
+    font-weight: bold;
 }
-
 
 .social-label {
     font-size: 0.7rem;
@@ -230,13 +229,15 @@ body {
 
 .footer-icon {
     width: 24px;
-    height: 24px;/* Since your footer is black, this makes black SVGs white */
-    transition: transform 0.3s ease, opacity 0.3s;
+    height: 24px; /* Since your footer is black, this makes black SVGs white */
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s;
     opacity: 0.7;
     background: transparent;
 }
 
-.footer-icon img{
+.footer-icon img {
     background-color: black;
 }
 
@@ -246,20 +247,25 @@ body {
 }
 
 .footer-bottom {
-        padding-top: 20px;
-        text-align: left; /* Keep copyright left-aligned */
-    }
+    padding-top: 20px;
+    text-align: left; /* Keep copyright left-aligned */
+}
 
-    .footer-bottom p {
-        font-size: 0.75rem;
-        color: rgba(255,255,255,0.5); /* Dim white so it's readable but professional */
-    }
+.footer-bottom p {
+    font-size: 0.75rem;
+    color: rgba(
+        255,
+        255,
+        255,
+        0.5
+    ); /* Dim white so it's readable but professional */
+}
 
-.footer-socials{
+.footer-socials {
     margin-bottom: 30px;
 }
 
-.social-link{
+.social-link {
     width: 35px;
     height: 35px;
     background-color: transparent;
@@ -267,11 +273,11 @@ body {
     margin-top: 10px;
 }
 
-.social-link img{
+.social-link img {
     width: 35px;
     height: 35px;
 }
-/* --- FOOTER SECTION --- */ 
+/* --- FOOTER SECTION --- */
 
 /* SITE REDIRECTING BUTTONS UNIVERSAL */
 
@@ -315,16 +321,16 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     text-decoration: none;
-    color: #CBD5E1;
+    color: #cbd5e1;
     font-family: monospace;
     font-size: 0.85rem;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .coffee-link:hover {
-    background: #FFDD00; /* Official BMC Yellow */
+    background: #ffdd00; /* Official BMC Yellow */
     color: #000;
-    border-color: #FFDD00;
+    border-color: #ffdd00;
     transform: translateY(-3px) rotate(-1deg);
     box-shadow: 0 10px 20px rgba(255, 221, 0, 0.2);
 }
@@ -341,18 +347,30 @@ body {
 }
 
 @keyframes steam {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-3px); }
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
 }
 /* --- BUY ME A COFFEE -- */
-
 
 /* ANIMATION */
 
 /* Page Load Animation */
 @keyframes heroReveal {
-    from { opacity: 0; transform: translateY(50px); filter: blur(10px); }
-    to { opacity: 1; transform: translateY(0); filter: blur(0); }
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
 }
 
 .hero-section h1 {
@@ -364,11 +382,114 @@ body {
     opacity: 0; /* Start hidden for animation */
 }
 
-/* --- ANIMATION --- */ 
+/* --- ANIMATION --- */
+
+/* New update */
+
+:root {
+    --neon-blue: #60a5fa;
+    --glass-bg: rgba(17, 17, 17, 0.8);
+    --border-gradient: linear-gradient(90deg, #3b82f6, #9333ea);
+}
+
+.glass-banner {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 60%;
+    max-width: 700px;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.banner-inner {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 50px; /* Makes it a pill shape */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 0 15px rgba(59, 130, 246, 0.1);
+}
+
+.pulse-icon {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 0, 0, 1);
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0 0 10px 2px rgba(255, 0, 0, 1);
+    animation: pulse 2s infinite;
+}
+
+.banner-message {
+    color: #e5e7eb;
+    font-family: "JetBrains Mono", monospace; /* Tech vibe */
+    font-size: 16px;
+    margin: 0;
+    flex-grow: 1;
+    line-height: 20px;
+}
+
+.highlight {
+    color: rgba(255, 0, 0, 1);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+.banner-cta {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid var(--neon-blue);
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.banner-cta:hover {
+    background: var(--neon-blue);
+    color: #000;
+    border-radius: 4px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #6b7280;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    padding: 0 5px;
+}
+
+.close-btn:hover {
+    color: #fff;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 1);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(96, 165, 250, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(96, 165, 250, 0);
+    }
+}
 
 /* --- ULTIMATE RESPONSIVE PATCH --- */
 @media (max-width: 768px) {
-    
     /* 1. HERO FIX: Scale down massive font to fit S24 width */
     .hero-section {
         min-height: 40vh;
@@ -408,7 +529,6 @@ body {
     .tool-card {
         flex: 0 0 180px; /* Force each card to be exactly 180px wide */
         scroll-snap-align: start; /* Snap point */
-        
     }
 
     /* Adjust logo and text for the compact scroll look */
@@ -440,16 +560,69 @@ body {
     }
 }
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
     .footer-wrap {
         flex-direction: column;
         align-items: center;
         gap: 40px;
     }
-    
 }
 
-
 @media (max-width: 600px) {
-    .category-title { font-size: 2rem; }
+    .category-title {
+        font-size: 2rem;
+    }
+}
+
+/* Tablet Optimization (768px and below) */
+@media (max-width: 768px) {
+    .glass-banner {
+        width: 85%; /* Expand width to give text more room */
+        top: 15px; /* Move slightly closer to the top */
+    }
+
+    .banner-inner {
+        padding: 14px 20px; /* Slimmer vertical padding */
+    }
+
+    .banner-message {
+        font-size: 14px; /* Slightly smaller text */
+        line-height: 1.4;
+    }
+}
+
+/* Mobile Optimization (678px and below) */
+@media (max-width: 678px) {
+    .glass-banner {
+        width: 92%; /* Maximize space on small screens */
+        top: 10px;
+    }
+
+    .banner-inner {
+        padding: 12px 16px;
+        border-radius: 20px; /* Reduce pill roundness slightly for better text flow */
+        flex-wrap: wrap; /* Allow content to wrap if text is long */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .banner-message {
+        font-size: 13px;
+        width: 100%; /* Force message to take full width if needed */
+        margin-bottom: 4px;
+    }
+
+    .banner-cta {
+        display: inline-block;
+        margin-left: 5px;
+        margin-top: 5px; /* Give the link its own breathing room */
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        margin: 0;
+        font-size: 18px;
+    }
 }
