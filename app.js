@@ -21,6 +21,13 @@ const directory = {
       fdroid: "https://f-droid.org/en/packages/dev.imranr.obtainium.fdroid/",
       website: "https://obtainium.imranr.dev/",
     },
+    {
+      name: "Droid-ify",
+      logo: "apps/droidify.png",
+      github: "https://github.com/Droid-ify/Droid-ify",
+      fdroid: "https://f-droid.org/en/packages/com.looker.droidify/",
+      website: "https://droidify.eu.org/",
+    },
   ],
 
   browser: [
