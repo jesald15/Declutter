@@ -719,7 +719,7 @@ body {
 
     .slide img {
         height: 480px; /* Slightly shorter height for tablets */
-        object-position: 80% 10%;
+        object-position: 83% 50%;
     }
 
     .slide-content {
@@ -752,10 +752,10 @@ body {
     }
 
     .slide img {
-        width: 100%;
         height: 480px; /* Taller relative height so the image is still the focus */
         opacity: 0.6; /* Slightly darker to make text even more readable on small screens */
-        object-position: 83% 10%;
+        object-position: 83% 50%;
+        transform: scale(1);
     }
 
     .slide-content {
