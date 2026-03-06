@@ -43,3 +43,16 @@ I’m always looking for new tools to research. Since this is a community projec
 I'm currently working on securing a dedicated domain name for the project to make it easier for everyone to find. Until then, the focus remains on the quality of the content and the simplicity of the experience.
 
 *Stay free, stay private.*
+
+
+## ❤️ Support My Work
+
+If this setup helped you revive an old machine or learn Arch Linux, consider supporting the project.
+
+Even a ⭐ on the repository helps a lot.
+
+[<img width="120" height="120" alt="buymeacoffee" src="https://github.com/user-attachments/assets/3fb313a4-17ec-484a-9df5-11ff6056d0c0" />
+](https://buymeacoffee.com/jesald)
+
+---
+
