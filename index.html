@@ -59,6 +59,70 @@
                 <span>Support my work!</span>
             </a>
         </header>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="slide fade">
+                    <a
+                        href="https://www.reddit.com/r/degoogle/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="full-slide-link"
+                    >
+                        <img src="medias/degoogle.png" alt="Featured 1" />
+                        <div class="slide-content">
+                            <h3>r/degoogle</h3>
+                            <p>
+                                Where you can find all the resources you need to
+                                expel Google from your life.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="slide fade">
+                    <a
+                        href="https://github.com/jesald15/Filo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="full-slide-link"
+                    >
+                        <img src="medias/Filo.png" alt="Featured 2" />
+                        <div class="slide-content">
+                            <h3>Filo</h3>
+                            <p>
+                                A Python CLI tool that automatically organizes
+                                files in a directory by categorizing them into
+                                folders based on file extensions.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="slide fade">
+                    <a
+                        href="https://mastodon.social/@echo_xc"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="full-slide-link"
+                    >
+                        <img src="medias/opentech.png" alt="Featured 2" />
+                        <div class="slide-content">
+                            <h3>OpenTech</h3>
+                            <p>
+                                Open Tech is a community centered around Linux
+                                and open-source software.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
 
         <main class="content">
             <section>
@@ -137,8 +201,6 @@
             </section>
         </main>
 
-        <script src="app.js"></script>
-
         <footer class="footer-section">
             <div class="footer-wrap">
                 <div class="footer-brand">
@@ -203,5 +265,8 @@
                 <p>&copy; 2026 OpenTech. Stay Open.</p>
             </div>
         </footer>
+
+        <script src="app.js"></script>
+        <script src="interface.js"></script>
     </body>
 </html>
