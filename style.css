@@ -754,8 +754,7 @@ body {
     .slide img {
         height: 480px; /* Taller relative height so the image is still the focus */
         opacity: 0.6; /* Slightly darker to make text even more readable on small screens */
-        object-position: 83% 50%;
-        transform: scale(1);
+        object-position: 75% 50%;
     }
 
     .slide-content {
