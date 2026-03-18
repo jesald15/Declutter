@@ -121,7 +121,7 @@ const directory = {
   chat: [
     {
       name: "Delta Chat",
-      logo: "apps/delta-chat.png",
+      logo: "apps/",
       github: "https://github.com/deltachat",
       fdroid: "https://f-droid.org/packages/com.b44t.messenger/",
       website: "https://delta.chat/",
